@@ -1,0 +1,12 @@
+/* src/App.css */
+
+/*
+  This module relies on Tailwind utility classes for layout and
+  styling. App.css only holds the few things Tailwind utilities
+  don't conveniently cover for this calculator's root container.
+*/
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}

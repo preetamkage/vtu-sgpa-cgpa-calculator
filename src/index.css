@@ -1,0 +1,41 @@
+/*
+  Base reset for the VTU SGPA & CGPA Calculator module.
+  Kept minimal and non-opinionated so this module can be dropped
+  into a larger Connected Campus dashboard without fighting its
+  global styles.
+*/
+
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #1f2937;
+  background-color: #f9fafb;
+}
+
+/* Remove number input spinners for a cleaner, more consistent look
+   across browsers, without changing input behavior or validation. */
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
